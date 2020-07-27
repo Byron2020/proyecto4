@@ -1,0 +1,11 @@
+create database proyecto;
+
+use database proyecto;
+
+create table usuarios(
+    id_user int(10) not null,
+
+);
+
+Alter table users
+    add PRIMARY KEY (id_user);

@@ -1,0 +1,10 @@
+.prueba{
+    display: inline-block;
+    background: red;
+    color:Blue;
+    text-transform: uppercase;
+}
+
+.body{
+ background: yellow;
+}
