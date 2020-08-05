@@ -1,5 +1,8 @@
 body {
-    background:yellow;
+    background: url('../img/fondo.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     font-family: 'Oswald', sans-serif;
     overflow: hidden;
 }
@@ -7,6 +10,7 @@ body {
 .index{
     width: 100 vh;
     height:100 vh;
+    z-index: 9;
 }
 .masthead {
     color: white;
@@ -14,10 +18,8 @@ body {
     width: 100%;
     height: 100%;
     padding-top: 8rem;
-    background: url('../img/fondo.png');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+   
+   
 }
 .masthead h1 {
     font-size: 4 em;
@@ -31,13 +33,20 @@ body {
     }
 }
 
-.prueba{
-    display: inline-block;
-    background: red;
-    color:Blue;
-    text-transform: uppercase;
+.search {
+    width:100%;
+    height: 5rem;
+    margin-top: 1rem;
 }
 
-.body{
- background: yellow;
+/* .input__color{
+    background: rgba(248, 251, 252, 0.315);
+} */
+
+.btn__color {
+    color:#fff;
+    background:  rgba(0, 0, 0, 0.503);
+    border-color:rgba(0, 0, 0, 0.503);
+    /* $blanco-transp:rgba(248, 251, 252, 0.315);
+    $negro-transp: rgba(0, 0, 0, 0.503); */
 }

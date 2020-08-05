@@ -17,7 +17,7 @@
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="/links">Todos User</a>
-          <a class="dropdown-item" href="/links/add">Agregar User</a>
+          <a class="dropdown-item" href="/links/add">Agregar</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
@@ -30,10 +30,19 @@
       </li>
       {{else}}
       <li class="nav-item">
-        <a href="/signin" class="nav-link">Entrar</a>
+        <a href="/signin" class="nav-link">Comprarr</a>
       </li>
       <li class="nav-item">
-        <a href="/signup" class="nav-link">Registrarse</a>
+        <a href="/signin" class="nav-link">Vender</a>
+      </li>
+      <li class="nav-item">
+        <a href="/signin" class="nav-link">Administrar</a>
+        
+      </li>
+      <li class="nav-item">
+        <a class="update" title="Modificar">
+						<i class="fa fa-pencil" aria-hidden="true"></i>
+				</a>
       </li>
 
       {{/if}}
@@ -46,9 +55,3 @@
   
 </div>
 </nav>
-
-<form class="container">
-      <input class="form-control mr-3" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0 ml-auto" type="submit">Search</button>
-  </form>
-
