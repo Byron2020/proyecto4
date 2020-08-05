@@ -1,0 +1,43 @@
+body {
+    background:yellow;
+    font-family: 'Oswald', sans-serif;
+    overflow: hidden;
+}
+
+.index{
+    width: 100 vh;
+    height:100 vh;
+}
+.masthead {
+    color: white;
+    min-height: 30rem;
+    width: 100%;
+    height: 100%;
+    padding-top: 8rem;
+    background: url('../img/fondo.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.masthead h1 {
+    font-size: 4 em;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 992px) {
+    .masthead h1 {
+        font-size: 5.5 rem;
+    }
+}
+
+.prueba{
+    display: inline-block;
+    background: red;
+    color:Blue;
+    text-transform: uppercase;
+}
+
+.body{
+ background: yellow;
+}
