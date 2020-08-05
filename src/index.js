@@ -1,21 +1,19 @@
-const express =require('express');
-const morgan= require('morgan');
-const exphbs= require('express-handlebars');
-const path= require('path');
+const express = require('express');
+const morgan = require('morgan');
+const path = require('path');
+const exphbs = require('express-handlebars');
+const session = require('express-session');
+const validator = require('express-validator');
+const passport = require('passport');
 const flash = require('connect-flash');
-const session= require('express-session');
-const MySQLStore= require('express-mysql-session');
+const MySQLStore = require('express-mysql-session')(session);
+const bodyParser = require('body-parser');
 
-const passport= require('passport');
+const { database } = require('./keys');
 
-const {database}= require('./keys');
-
-//inicializacion
-const app= express();
+// Intializations
+const app = express();
 require('./lib/passport');
-
-
-app.use(express.static('src'));
 
 
 //setting
@@ -48,6 +46,7 @@ app.use(passport.session());
 //Global Variables
 app.use((req, res, next)=>{
     app.locals.success = req.flash('success');
+    app.locals.message = req.flash('message');
     next();
 });
 

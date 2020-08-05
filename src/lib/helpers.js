@@ -3,17 +3,17 @@ const helpers={};
 
 
 helpers.encryptPassword =async (password_user)=>{
-    const salt= await bcrypt.genSalt(10);
+    const salt= await bcrypt.genSalt(7);
     const hash= await bcrypt.hash(password_user,salt);
     return hash;
 };
 
-helpers.matchPassword= async(password_user,savedPassword)=>{
+helpers.matchPassword= async (password_user, savedPassword) => {
     try {
-        await bcrypt.compare(password_user, savedPassword);
+       return await bcrypt.compare(password_user, savedPassword);
     } catch (e) {
         console.log(e);
     }
 };
 
-module.exports=helpers;
+module.exports= helpers;
