@@ -1,7 +1,7 @@
 <div class="container p-4">
     <div class="row">
-        {{#each list_users}}
-            <div class="card text-center prueba">
+        {{#each list_producto}}
+            <div class="card text-center div__prod">
                 <div class="card-body">
                  
                         <h3 class="card-title">
@@ -13,13 +13,13 @@
                     <p>{{timeago fecha_user}}</p>
                     {{!-- <a href="/links/delete/{{id_user}}" class="btn btn-danger">Eliminar</a>
                     <a href="/links/edit/{{id_user}}" class="btn btn-secondary">Editar</a> --}}
-                    <a href="/links/delete/{{id_user}}" class="btn btn-outline-success btn__color">Ver</a>
+                    <a href="/productos/delete/{{id_user}}" class="btn btn-outline-success btn__color">Ver</a>
                 </div>
             </div>
         {{else}}
             <div class="colmd-4 mx-auto">
                 <h2>No hay registros</h2>
-                <a href="/links/add">Agregar nuevo</a>
+                <a href="/productos/add">Agregar nuevo</a>
             </div>
         {{/each}}
     </div>

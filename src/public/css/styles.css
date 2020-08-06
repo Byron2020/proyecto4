@@ -50,3 +50,12 @@ body {
     /* $blanco-transp:rgba(248, 251, 252, 0.315);
     $negro-transp: rgba(0, 0, 0, 0.503); */
 }
+
+.prueba {
+    background:red;
+}
+
+.div__prod {
+    background: red;
+    width: 30%;
+}
